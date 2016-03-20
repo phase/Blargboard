@@ -31,7 +31,7 @@ $metaStuff = array(
 //=======================
 // Do the page
 
-$mainPage = 'home';
+$mainPage = 'board';
 
 if (isset($_GET['page']))
 	$page = $_GET['page'];
