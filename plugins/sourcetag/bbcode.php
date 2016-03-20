@@ -10,7 +10,7 @@ function bbcodeCodeHighlight($contents, $arg)
 
 	if(!$arg)
 	{
-		return '<div class="codeblock">'.htmlentities($contents).'</div>';
+		return '<pre><code>'.htmlentities($contents).'</code></pre>';
 	}
 	else
 	{
@@ -22,7 +22,7 @@ function bbcodeCodeHighlight($contents, $arg)
 
 		$code = str_replace("\n", "", $geshi->parse_code());
 		$code = decodeCrapEntities($code);
-		return "<div class=\"codeblock geshi\">$code</div>";
+		return "<pre><code>$code</code></pre>";
 	}
 }
 

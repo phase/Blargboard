@@ -181,7 +181,7 @@ function bbcodeSpoiler($contents, $arg, $parenttag)
 
 function bbcodeCode($contents, $arg, $parenttag)
 {
-	return '<div class="codeblock">'.htmlentities($contents).'</div>';
+	return '<code><pre>'.htmlentities($contents).'</code></pre>';
 }
 
 function bbcodeTable($contents, $arg, $parenttag)

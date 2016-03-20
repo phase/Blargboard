@@ -1,69 +1,100 @@
 <!doctype html>
 <html>
 <head>
-<title>Blargboard install</title>
+<title>Blargboard Install</title>
 <style type="text/css">
-a:link { color: #0e5; }
-a:visited { color: #0e5; }
-a:hover, a:active { color: #bfb; }
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-html, body { width: 100%; height: 100%; }
+	html, body { width: 100%; height: 100%; }
+	
+	body {
+		background: #0d0d0d;
+		font-family: "Verdana", "Arial", sans-serif;
+		color: #dedede; }
+	
+	.container {
+		max-width: 1366px;
+		margin-left: auto;
+		margin-right: auto; }
+	
+	.outline {
+		margin-bottom: 15px; }
+		
+	.box {
+		border-top: 1px solid #383838;
+		border-left: 1px solid #383838;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		padding: 5px; }
+		
+	.header {
+		background: #1a1a1a;
+		padding: 4px 8px; }
+		
+	.cell {
+		background: #232323; }
+	
+	.col2 {
+		background: #1e1e1e; }
+		
+	.center {
+		text-align: center; }
+		
+	#boardtitle {
+		font-size: 5em;
+		color: #fff;
+		margin-top: 5px;
+		text-align: center;
+		font-family: 'Open Sans'; 
+		font-weight: normal; }
 
-body
-{
-	font: 12pt 'Arial', 'Helvetica', sans-serif;
-	background: #222;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	color: #fff;
-}
+	#subtitle {
+		font-size: 2em;
+		opacity: 0.5;
+		margin-bottom: 5px; 
+		color: #fff;
+		text-align: center;
+		font-family: 'Open Sans'; 
+		font-weight: normal; }
+		
+	textarea, input {
+		color: #eeeeee; }
 
-#container
-{
-	background: #032;
-	min-height: 100%;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	max-width: 1000px;
-	margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 0;
-}
+	textarea, input[type='text'], input[type='password'], input[type='email'] {
+		border: 1px solid #555555;
+		background: #333333;
+		padding: 4px }
 
-h1, h3
-{
-	border-bottom: 2px solid #0d5;
-	padding-bottom: 1em;
-}
+	textarea:hover, input[type='text']:hover, input[type='password']:hover, input[type='email']:hover {
+		border: 1px solid #888; }
 
-input, select
-{
-	background: black;
-	color: white;
-	border: 1px solid #054;
-}
+	textarea:focus, textarea:active, input[type='text']:focus, input[type='text']:active, input[type='password']:focus, input[type='password']:active, input[type='email']:focus, 	input[type='email']:active {
+		border: 1px solid #999;
+		background: #484848; }
+	
+	button, input[type='submit'] {
+		background: #1a1a1a;
+		border-top: 1px solid #383838;
+		border-left: 1px solid #383838;
+		border-bottom: 1px solid #000;
+		border-right: 1px solid #000;
+		color: #cccccc;
+		padding: 6px 10px; }
 
-input[type='submit'], input[type='button']
-{
-	border: 2px ridge #0d5;
-}
+	button:hover, input[type='submit']:hover {
+		background: #1e1e1e; }
+	
+	button:active, input[type='submit']:active {
+		background: #1e1e1e; }
+		
+	a {
+		text-decoration: none; }
+	
+	a:link, a:visited { 
+		color: #6DBDF2; }
 
-.blarg
-{
-	margin: 1em;
-}
-
-table
-{
-	width: 100%;
-	border-collapse: collapse;
-}
-
-td:not([colspan='2'])
-{
-	border-bottom: 1px solid #043;
-}
+	a:active, a:hover { 
+		color: #fff; }
 </style>
 </head>
 <body>

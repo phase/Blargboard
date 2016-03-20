@@ -134,7 +134,7 @@ $mobileswitch = '';
 if ($mobileLayout) $mobileswitch .= 'Mobile view - ';
 if ($_COOKIE['forcelayout']) $mobileswitch .= '<a href="?forcelayout=0" rel="nofollow">Auto view</a>';
 else if ($mobileLayout) $mobileswitch .= '<a href="?forcelayout=-1" rel="nofollow">Force normal view</a>';
-else $mobileswitch .= '<a href="?forcelayout=1" rel="nofollow">Force mobile view [BETA]</a>';
+else $mobileswitch .= '<a href="?forcelayout=1" rel="nofollow">Force mobile view</a>';
 
 
 //=======================
@@ -172,8 +172,8 @@ if(!file_exists($themefile))
 
 $layout_credits = 
 '<img src="'.resourceLink('img/poweredbyblarg.png').'" style="float: left; margin-right: 3px;">
-<a href="http://kuribo64.net/blargboard/" target="_blank">Blargboard 1.1</a> &middot; by StapleButter<br>
-Based off <a href="http://abxd.dirbaio.net/" target="_blank">ABXD</a> by Dirbaio, Kawa &amp; co.<br>';
+Blargboard &middot; by StapleButter (with <a href="https://github.com/phase/Blargboard">some modifications</a> by Phase)<br>
+Based off ABXD by Dirbaio, Kawa &amp; co.<br>';
 	
 
 $layout_contents = "<div id=\"page_contents\">$layout_contents</div>";
@@ -202,12 +202,15 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink("css/common.css");?>">
 	<link rel="stylesheet" type="text/css" id="theme_css" href="<?php print resourceLink($themefile); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink('css/font-awesome.min.css'); ?>">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/highlight.js/9.2.0/styles/railscasts.min.css">
 
 	<script type="text/javascript" src="<?php print resourceLink("js/jquery.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/tricks.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/jquery.tablednd_0_5.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/jquery.scrollTo-1.4.2-min.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/jscolor/jscolor.js");?>"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 	<script type="text/javascript">boardroot = <?php print json_encode($boardroot); ?>;</script>
 
 	<?php $bucket = "pageHeader"; include("./lib/pluginloader.php"); ?>
@@ -248,7 +251,8 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 		'layout_birthdays' => $layout_birthdays,
 		'layout_credits' => $layout_credits,
 		'mobileswitch' => $mobileswitch,
-		'perfdata' => $perfdata)); 
+		'perfdata' => $perfdata,
+		'mainPage' => $mainPage)); 
 ?>
 </body>
 </html>
@@ -257,4 +261,3 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 $bucket = "finish"; include('lib/pluginloader.php');
 
 ?>
-

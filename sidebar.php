@@ -2,8 +2,15 @@
 
 $headerlinks = array
 (
-	$boardroot => Settings::get('breadcrumbsMainName'), 
+	$boardroot => Settings::get('breadcrumbsMainName'),
+	actionLink('home') => 'Home page',
 	actionLink('board') => 'Forums',
+	actionLink('faq') => 'FAQ',
+	actionLink('memberlist') => 'Member list',
+	actionLink('ranks') => 'Ranks',
+	actionLink('online') => 'Online users',
+	actionLink('lastposts') => 'Last posts',
+	actionLink('search') => 'Search',
 );
 
 $sidelinks = array
