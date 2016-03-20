@@ -170,6 +170,10 @@ $themefile = "themes/$theme/style.css";
 if(!file_exists($themefile))
 	$themefile = "themes/$theme/style.php";
 
+$code_highlight = "themes/$theme/highlight.css";
+if(!file_exists($code_highlight))
+	$code_highlight = "css/highlight-theme.css";
+
 $layout_credits = 
 '<img src="'.resourceLink('img/poweredbyblarg.png').'" style="float: left; margin-right: 3px;">
 Blargboard &middot; by StapleButter (with <a href="https://github.com/phase/Blargboard">some modifications</a> by Phase)<br>
@@ -202,7 +206,7 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink("css/common.css");?>">
 	<link rel="stylesheet" type="text/css" id="theme_css" href="<?php print resourceLink($themefile); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink('css/font-awesome.min.css'); ?>">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/highlight.js/9.2.0/styles/railscasts.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php print resourceLink($code_highlight);?>">
 
 	<script type="text/javascript" src="<?php print resourceLink("js/jquery.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/tricks.js");?>"></script>
