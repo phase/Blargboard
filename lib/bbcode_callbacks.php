@@ -258,16 +258,22 @@ function bbcodeYoutube($contents, $arg, $parenttag)
 
 function bbcodeGist($contents, $arg) {
     if (!function_exists('curl_init')) {
-        return "<a href=\"https://gist.github.com/$contents\">View $contents on Gist</a>";
+        return "<a href=\"https://gist.github.com/$contents\">View $contents on GitHub</a>";
+    }
+    else if (!preg_match("/(.*)\/([0-9a-f]+)/", $contents)) {
+        return "<b>Invalid Gist</b>";
     }
     else {
         //https://gist.githubusercontent.com/$contents
-        $curlSession = curl_init();
-        curl_setopt($curlSession, CURLOPT_URL, "https://gist.githubusercontent.com/$contents");
-        curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
-        curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
-        $code = json_decode(curl_exec($curlSession));
-        curl_close($curlSession);
+        //https://gist.githubusercontent.com/phase/3408562a0a0305664190/raw/635adf713eff99632220bafcb5473a1b358637ad/phasebot.c
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://gist.githubusercontent.com/$contents/raw");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        $code = curl_exec($ch);
+        curl_close($ch);
         return "<pre><code>$code</code></pre>";
     }
 }

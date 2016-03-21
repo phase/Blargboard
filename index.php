@@ -203,8 +203,8 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 	<meta name="keywords" content="<?php print $metaStuff['tags']; ?>">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="<?php print $favicon;?>">
-	<link rel="stylesheet" type="text/css" id="theme_css" href="<?php print resourceLink($themefile); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink("css/common.css");?>">
+	<link rel="stylesheet" type="text/css" id="theme_css" href="<?php print resourceLink($themefile); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink('css/font-awesome.min.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink($code_highlight);?>">
 
