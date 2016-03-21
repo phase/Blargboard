@@ -53,21 +53,24 @@
 	</div>
 
 	<div id="main" style="padding:0px;">
-	
+
 	<table class="outline" id="mobile-crumbs">
-	<tr class="header0"><th>
-		<span style="float:right;">
-			<button onclick="openSidebar();"{if !$numnotifs}>...{else} class="notifs">{$numnotifs}{/if}</button>
-		</span>
-		
-		{if count($layout_crumbs)>1}
-		{$crumburls=array_keys($layout_crumbs)}
-		{$prevcrumb=$crumburls[count($crumburls)-2]}
-		{$thiscrumb=$crumburls[count($crumburls)-1]}
-		<button onclick="window.location='{$prevcrumb|escape}';">&lt;</button> {$layout_crumbs[$thiscrumb]}
-		{/if}
-		
-	</th></tr>
+	<tr class="header0">
+		<th>
+			<a href="{actionLink page=$mainPage}"><img id="theme_banner" src="{$layout_logopic}" alt="{$boardname}" title="{$boardname}"></a>
+		</th>
+		<th>
+			<span style="float:right;">
+				<button onclick="openSidebar();"{if !$numnotifs}>...{else} class="notifs">{$numnotifs}{/if}</button>
+			</span>
+			{if count($layout_crumbs)>1}
+			{$crumburls=array_keys($layout_crumbs)}
+			{$prevcrumb=$crumburls[count($crumburls)-2]}
+			{$thiscrumb=$crumburls[count($crumburls)-1]}
+			<button onclick="window.location='{$prevcrumb|escape}';">&lt;</button> {$layout_crumbs[$thiscrumb]}
+			{/if}
+		</th>
+	</tr>
 	</table>
 
 	{$layout_contents}

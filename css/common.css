@@ -57,6 +57,11 @@ body
 	margin: 0 0 1em;
 }
 
+#mobile-crumbs img {
+	height: auto;
+	width: 100%;
+}
+
 #mobile-crumbs th
 {
 	text-align: left!important;
@@ -377,7 +382,7 @@ td.contents-container
 
 div#page_contents
 {
-	padding: 8px;
+	padding: 8px 10%;
 	height: 100%;
 }
 

@@ -3,7 +3,7 @@
 <td id="main-header" colspan="2">
 	<table id="header" class="outline">
 		<tr>
-			<td class="cell0 left">
+			<td class="cell0 right">
 				<table class="layout-table">
 				<tr>
 				<td>
