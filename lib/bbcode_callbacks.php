@@ -27,6 +27,7 @@ $bbcodeCallbacks = array
 	"[td" => "bbcodeTableCell",
 	
 	'[youtube' => 'bbcodeYoutube',
+    '[gist' => 'bbcodeGist',
 );
 
 //Allow plugins to register their own callbacks (new bbcode tags)
@@ -253,4 +254,20 @@ function bbcodeYoutube($contents, $arg, $parenttag)
 		return "[Invalid youtube video ID]";
 
 	return '[youtube]'.$contents.'[/youtube]';
+}
+
+function bbcodeGist($contents, $arg) {
+    if (!function_exists('curl_init')) {
+        return "<a href=\"https://gist.github.com/$contents\">View $contents on Gist</a>";
+    }
+    else {
+        //https://gist.githubusercontent.com/$contents
+        $curlSession = curl_init();
+        curl_setopt($curlSession, CURLOPT_URL, "https://gist.githubusercontent.com/$contents");
+        curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
+        curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
+        $code = json_decode(curl_exec($curlSession));
+        curl_close($curlSession);
+        return "<pre><code>$code</code></pre>";
+    }
 }

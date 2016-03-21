@@ -96,6 +96,7 @@ $TagList = array
 	'[td'		=> 	TAG_GOOD | TAG_BLOCK | TAG_CLOSEOPTIONAL,
 	
 	'[youtube' 	=> 	TAG_GOOD | TAG_NOAUTOLINK,
+    '[gist'     =>  TAG_GOOD | TAG_NOFORMAT,
 );
 
 $TagAllowedIn = array
