@@ -1,21 +1,12 @@
 # Blargboard
 
-http://kuribo64.net/blargboard/
-
-http://kuribo64.net/?page=forum&id=82
-
--------------------------------------------------------------------------------
-
 Board software written in PHP. Uses MySQL for storage.
 
-This is the software that powers Kuribo64 (http://kuribo64.net/). Or well, not quite.
-The code provided here is a cleaned up version, with all the K64-specific stuff removed.
+This is a modified version of StapleButter's original Blargboard.
+StapleButter gave up on the project, and I'm just making edits to it.
 
-It is based off ABXD. ABXD is made by Dirbaio, Nina, GlitchMr & co, and was originally
-Kawa's project. See http://abxd.dirbaio.net/ for more details.
-
-It uses Smarty for its templates, and Font Awesome. And possibly some other funny things 
-I forgot about.
+Blargboard is based off ABXD. ABXD is made by Dirbaio, Nina, GlitchMr & co, and was originally
+Kawa's project. ABXD is also dead.
 
 This board follows the Acmlmboard concept. If you don't know Acmlmboard, you don't know what you're missing.
 
@@ -23,10 +14,11 @@ This board follows the Acmlmboard concept. If you don't know Acmlmboard, you don
 
 # Requirements
 
-Blargboard requires PHP 5.3. With a few changes, it could be lowered to 5.2, so this will
-be considered.
+Blargboard requires PHP 5.3.
 
 There is no exact requirement for MySQL, but make sure to have a recent version.
+
+Your host must allow external PHP connections from cURL for IP checking, Gist/Pastebin tags, and other things.
 
 Everything else is provided in the package.
 
@@ -45,7 +37,7 @@ If everything went fine, browse to your freshly installed board and configure it
 We recommend you take some time and make your own board themes and banner to give your board a truly unique feel.
 If you have HTML knowledge, you can even edit the templates to change your board's look more in-depth.
 
-DO NOT TRY USING THE PROVIDED PLUGINS. They haven't be adapted to the newer Blargboard
+**DO NOT TRY USING THE PROVIDED PLUGINS**. They haven't be adapted to the newer Blargboard
 codebase yet. Some may work, but others may break parts of your board.
 
 -------------------------------------------------------------------------------
@@ -120,35 +112,23 @@ How to (insert action): first look into your board's admin panel, settings panel
 
 -------------------------------------------------------------------------------
 
-# Support
+# TODO List
 
-The Blargboard help forum is at Kuribo64: http://kuribo64.net/?page=forum&id=82
-
-If anything goes wrong with your board, go there and let us know. Make sure to describe your problems in detail, our crystal ball is scratched so we can't see well.
-
-YOU WILL NOT RECEIVE HELP IF YOU HAVEN'T READ THE INSTRUCTIONS WHEN INSTALLING YOUR BOARD.
-
--------------------------------------------------------------------------------
-
-# TODO list
-
-(no particular order there)
-
- * finish implementing templates
- * improve the permission editing interfaces
- * port the 'show/hide sidebar' feature from Kuribo64? or just nuke the sidebar? more leaning towards the latter.
- * merge/split threads a la phpBB (albeit without the shitty interface)
- * support multiple password hashing methods? (for importing from other board softwares, or for those who feel SHA256 with per-user salt isn't enough) (kinda addressed via login plugins)
- * more TODO at Kuribo64 and RVLution
- 
- * low priority: change/remove file headers? most of the original files still say 'AcmlmBoard XD'
+* redirect pages (ex.com/user/1 => ex.com/?page=user)
+* improve the permission editing interfaces
+* merge/split threads a la phpBB (albeit without the shitty interface)
+* support multiple password hashing methods? (for importing from
+  other board softwares, or for those who feel SHA256 with per-user salt isn't enough)
+  (kinda addressed via login plugins)
+* download page
+* new badges
+* new icons
+* low priority: change/remove file headers? most of the original files still say 'AcmlmBoard XD'
 
 -------------------------------------------------------------------------------
 
 Blargboard is provided as-is, with no guarantee that it'll be useful or even work. I'm not
 responsible if it explodes in your face. Use that thing at your own risk.
-
-Oh well, it should work rather well. See Kuribo64. But uh, we never know.
 
 -------------------------------------------------------------------------------
 

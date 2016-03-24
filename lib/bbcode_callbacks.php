@@ -260,8 +260,8 @@ function bbcodeGist($contents, $arg) {
     if (!function_exists('curl_init')) {
         return "<a href=\"https://gist.github.com/$contents\">View $contents on GitHub</a>";
     }
-    else if (!preg_match("/(.*)\/([0-9a-f]+)/", $contents)) {
-        return "<b>Invalid Gist</b>";
+    else if (!preg_match("/([0-9_a-zA-Z]+)\/([0-9a-f]+)/", $contents)) {
+        return "<pre><code>Invalid Gist</code></pre>";
     }
     else {
         //https://gist.githubusercontent.com/$contents
