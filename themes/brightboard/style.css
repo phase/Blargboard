@@ -49,11 +49,6 @@ table.outline, table.post
 	margin-bottom: 1.3em;
 }
 
-div#page_contents
-{
-	padding: 1em;
-}
-
 table.outline > tbody > tr > *,
 table.post td.userlink,
 table.post td.meta
