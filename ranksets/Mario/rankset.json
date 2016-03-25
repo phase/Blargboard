@@ -1,0 +1,366 @@
+{
+	"Non-poster": {
+		"num": 0,
+		"image": ""
+	},
+	"Newcomer": {
+		"num": 1,
+		"image": ""
+	},
+	"Micro-Goomba": {
+		"num": 10,
+		"image": "microgoomba.png"
+	},
+	"Goomba": {
+		"num": 20,
+		"image": "goomba.png"
+	},
+	"Red Goomba": {
+		"num": 35,
+		"image": "redgoomba.png"
+	},
+	"Red Paragoomba": {
+		"num": 50,
+		"image": "redparagoomba.png"
+	},
+	"Paragoomba": {
+		"num": 65,
+		"image": "paragoomba.png"
+	},
+	"Shyguy": {
+		"num": 80,
+		"image": "shyguy.png"
+	},
+	"Koopa": {
+		"num": 100,
+		"image": "koopa.png"
+	},
+	"Red Koopa": {
+		"num": 120,
+		"image": "redkoopa.png"
+	},
+	"Paratroopa": {
+		"num": 140,
+		"image": "paratroopa.png"
+	},
+	"Red Paratroopa": {
+		"num": 160,
+		"image": "redparatroopa.png"
+	},
+	"Cheep-cheep": {
+		"num": 180,
+		"image": "cheepcheep.png"
+	},
+	"Red Cheep-cheep": {
+		"num": 200,
+		"image": "redcheepcheep.png"
+	},
+	"Ninji": {
+		"num": 225,
+		"image": "ninji.png"
+	},
+	"Flurry": {
+		"num": 250,
+		"image": "flurry.png"
+	},
+	"Snifit": {
+		"num": 275,
+		"image": "snifit.png"
+	},
+	"Porcupo": {
+		"num": 300,
+		"image": "porcupo.png"
+	},
+	"Panser": {
+		"num": 325,
+		"image": "panser.png"
+	},
+	"Mole": {
+		"num": 350,
+		"image": "mole.png"
+	},
+	"Buzzy Beetle": {
+		"num": 375,
+		"image": "buzzybeetle.png"
+	},
+	"Nipper Plant": {
+		"num": 400,
+		"image": "nipperplant.png"
+	},
+	"Bloober": {
+		"num": 425,
+		"image": "bloober.png"
+	},
+	"Buster Beetle": {
+		"num": 450,
+		"image": "busterbeetle.png"
+	},
+	"Beezo": {
+		"num": 475,
+		"image": "beezo.png"
+	},
+	"Bullet Bill": {
+		"num": 500,
+		"image": "bulletbill.png"
+	},
+	"Rex": {
+		"num": 525,
+		"image": "rex.png"
+	},
+	"Lakitu": {
+		"num": 550,
+		"image": "lakitu.png"
+	},
+	"Spiny": {
+		"num": 575,
+		"image": "spiny.png"
+	},
+	"Bob-Omb": {
+		"num": 600,
+		"image": "bobomb.png"
+	},
+	"Dry Bones": {
+		"num": 625,
+		"image": "drybones.png"
+	},
+	"Cobrat": {
+		"num": 650,
+		"image": "cobrat.png"
+	},
+	"Pokey": {
+		"num": 675,
+		"image": "pokey.png"
+	},
+	"Spike": {
+		"num": 700,
+		"image": "spike.png"
+	},
+	"Melon Bug": {
+		"num": 725,
+		"image": "melonbug.png"
+	},
+	"Lantern Ghost": {
+		"num": 750,
+		"image": "lanternghost.png"
+	},
+	"Fuzzy": {
+		"num": 775,
+		"image": "fuzzy.png"
+	},
+	"Bandit": {
+		"num": 800,
+		"image": "bandit.png"
+	},
+	"Super Koopa": {
+		"num": 830,
+		"image": "superkoopa.png"
+	},
+	"Red Super Koopa": {
+		"num": 860,
+		"image": "redsuperkoopa.png"
+	},
+	"Boo": {
+		"num": 900,
+		"image": "boo.png"
+	},
+	"Boo": {
+		"num": 925,
+		"image": "boo.png"
+	},
+	"Fuzz Ball": {
+		"num": 950,
+		"image": "fuzzball.png"
+	},
+	"Boomerang Brother": {
+		"num": 1000,
+		"image": "boomerangbrother.png"
+	},
+	"Hammer Brother": {
+		"num": 1050,
+		"image": "hammerbrother.png"
+	},
+	"Fire Brother": {
+		"num": 1100,
+		"image": "firebrother.png"
+	},
+	"Fire Snake": {
+		"num": 1150,
+		"image": "firesnake.png"
+	},
+	"Giant Goomba": {
+		"num": 1200,
+		"image": "giantgoomba.png"
+	},
+	"Giant Koopa": {
+		"num": 1250,
+		"image": "giantkoopa.png"
+	},
+	"Giant Red Koopa": {
+		"num": 1300,
+		"image": "giantredkoopa.png"
+	},
+	"Giant Paratroopa": {
+		"num": 1350,
+		"image": "giantparatroopa.png"
+	},
+	"Giant Red Paratroopa": {
+		"num": 1400,
+		"image": "giantredparatroopa.png"
+	},
+	"Chuck": {
+		"num": 1450,
+		"image": "chuck.png"
+	},
+	"Thwomp": {
+		"num": 1500,
+		"image": "thwomp.png"
+	},
+	"Boss Bass": {
+		"num": 1550,
+		"image": "bossbass.png"
+	},
+	"Volcano Lotus": {
+		"num": 1600,
+		"image": "volcanolotus.png"
+	},
+	"Lava Lotus": {
+		"num": 1650,
+		"image": "lavalotus.png"
+	},
+	"Ptooie": {
+		"num": 1700,
+		"image": "ptooie.png"
+	},
+	"Sledge Brother": {
+		"num": 1800,
+		"image": "sledgebrother.png"
+	},
+	"Boomboom": {
+		"num": 1900,
+		"image": "boomboom.png"
+	},
+	"Birdo": {
+		"num": 2000,
+		"image": "birdo.png"
+	},
+	"Red Birdo": {
+		"num": 2100,
+		"image": "redbirdo.png"
+	},
+	"Green Birdo": {
+		"num": 2200,
+		"image": "greenbirdo.png"
+	},
+	"Larry Koopa": {
+		"num": 2300,
+		"image": "larrykoopa.png"
+	},
+	"Morton Koopa": {
+		"num": 2400,
+		"image": "mortonkoopa.png"
+	},
+	"Wendy Koopa": {
+		"num": 2500,
+		"image": "wendykoopa.png"
+	},
+	"Iggy Koopa": {
+		"num": 2600,
+		"image": "iggykoopa.png"
+	},
+	"Roy Koopa": {
+		"num": 2700,
+		"image": "roykoopa.png"
+	},
+	"Lemmy Koopa": {
+		"num": 2800,
+		"image": "lemmykoopa.png"
+	},
+	"Ludwig Von Koopa": {
+		"num": 2900,
+		"image": "ludwigvonkoopa.png"
+	},
+	"Triclyde": {
+		"num": 3000,
+		"image": "triclyde.png"
+	},
+	"Magikoopa": {
+		"num": 3100,
+		"image": "magikoopa.png"
+	},
+	"Wart": {
+		"num": 3200,
+		"image": "wart.png"
+	},
+	"Baby Bowser": {
+		"num": 3300,
+		"image": "babybowser.png"
+	},
+	"King Bowser Koopa": {
+		"num": 3400,
+		"image": "kingbowserkoopa.png"
+	},
+	"Yoshi": {
+		"num": 3500,
+		"image": "yoshi.png"
+	},
+	"Yellow Yoshi": {
+		"num": 3600,
+		"image": "yellowyoshi.png"
+	},
+	"Blue Yoshi": {
+		"num": 3700,
+		"image": "blueyoshi.png"
+	},
+	"Red Yoshi": {
+		"num": 3800,
+		"image": "redyoshi.png"
+	},
+	"King Yoshi": {
+		"num": 3900,
+		"image": "kingyoshi.png"
+	},
+	"Baby Mario": {
+		"num": 4000,
+		"image": "babymario.png"
+	},
+	"Luigi": {
+		"num": 4100,
+		"image": "luigi.png"
+	},
+	"Mario": {
+		"num": 4200,
+		"image": "mario.png"
+	},
+	"Super Luigi": {
+		"num": 4300,
+		"image": "superluigi.png"
+	},
+	"Super Mario": {
+		"num": 4400,
+		"image": "supermario.png"
+	},
+	"Fire Luigi": {
+		"num": 4500,
+		"image": "fireluigi.png"
+	},
+	"Fire Mario": {
+		"num": 4600,
+		"image": "firemario.png"
+	},
+	"Cape Luigi": {
+		"num": 4700,
+		"image": "capeluigi.png"
+	},
+	"Cape Mario": {
+		"num": 4800,
+		"image": "capemario.png"
+	},
+	"Star Luigi": {
+		"num": 4900,
+		"image": "starluigi.png"
+	},
+	"Star Mario": {
+		"num": 5000,
+		"image": "starmario.png"
+	}
+}
