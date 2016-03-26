@@ -49,6 +49,8 @@ function loadRanksets()
                         array_push($ranksetData[$file],array("num" => $num, "image" => $image, "text" => $text));
                     }
                 }
+                else if(file_exists($dir.$file."/rankset.php"))
+                    include($dir.$file."/rankset.php");
             }
             closedir($dh);
         }

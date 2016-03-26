@@ -1,0 +1,370 @@
+{
+	"Non-poster": {
+		"num": 0,
+		"image": ""
+	},
+	"Acro": {
+		"num": 5,
+		"image": "acro.gif"
+	},
+	"BioSpark": {
+		"num": 10,
+		"image": "biospark.gif"
+	},
+	"Birdon": {
+		"num": 15,
+		"image": "birdon.gif"
+	},
+	"Blade Knight": {
+		"num": 20,
+		"image": "bladeknight.gif"
+	},
+	"Blipper": {
+		"num": 25,
+		"image": "blipper.gif"
+	},
+	"Bobo": {
+		"num": 30,
+		"image": "bobo.gif"
+	},
+	"Boboo": {
+		"num": 35,
+		"image": "boboo.gif"
+	},
+	"Bomber": {
+		"num": 40,
+		"image": "bomber.gif"
+	},
+	"Bonkers": {
+		"num": 45,
+		"image": "bonkers.gif"
+	},
+	"Bouncy": {
+		"num": 50,
+		"image": "bouncy.gif"
+	},
+	"Bronto Burt": {
+		"num": 55,
+		"image": "brontoburt.gif"
+	},
+	"Broom Hatter": {
+		"num": 60,
+		"image": "broomhatter.gif"
+	},
+	"Bugzzy": {
+		"num": 65,
+		"image": "bugzzy.gif"
+	},
+	"Burnin Leo": {
+		"num": 70,
+		"image": "burninleo.gif"
+	},
+	"Butch": {
+		"num": 75,
+		"image": "butch.gif"
+	},
+	"Cappy": {
+		"num": 80,
+		"image": "cappy.gif"
+	},
+	"Capsulej": {
+		"num": 85,
+		"image": "capsulej.gif"
+	},
+	"Captain Stitch": {
+		"num": 90,
+		"image": "captainstitch.gif"
+	},
+	"Chef Kawaski": {
+		"num": 95,
+		"image": "chefkawasaki.gif"
+	},
+	"Chilly": {
+		"num": 100,
+		"image": "chilly.gif"
+	},
+	"Clock Work": {
+		"num": 105,
+		"image": "clockwork.gif"
+	},
+	"Coney": {
+		"num": 110,
+		"image": "coney.gif"
+	},
+	"Coo": {
+		"num": 115,
+		"image": "coo.gif"
+	},
+	"Dark Matter": {
+		"num": 120,
+		"image": "darkmatter.gif"
+	},
+	"Dyna Baby": {
+		"num": 125,
+		"image": "dynababy.gif"
+	},
+	"Flamemane": {
+		"num": 130,
+		"image": "flamemane.gif"
+	},
+	"Frosty": {
+		"num": 135,
+		"image": "frosty.gif"
+	},
+	"Gator": {
+		"num": 140,
+		"image": "gator.gif"
+	},
+	"Giant Waddledee": {
+		"num": 145,
+		"image": "giantwaddledee.gif"
+	},
+	"Gim": {
+		"num": 150,
+		"image": "gim.gif"
+	},
+	"Glunk": {
+		"num": 155,
+		"image": "glunk.gif"
+	},
+	"Gooey": {
+		"num": 160,
+		"image": "gooey.gif"
+	},
+	"Gordo": {
+		"num": 165,
+		"image": "gordo.gif"
+	},
+	"Grizzo": {
+		"num": 170,
+		"image": "grizzo.gif"
+	},
+	"Gun Gun": {
+		"num": 175,
+		"image": "gungun.gif"
+	},
+	"Haboki": {
+		"num": 180,
+		"image": "haboki.gif"
+	},
+	"Jumper Shoot": {
+		"num": 185,
+		"image": "jumpershoot.gif"
+	},
+	"Kabu": {
+		"num": 190,
+		"image": "kabu.gif"
+	},
+	"Karate Man": {
+		"num": 195,
+		"image": "karateman.gif"
+	},
+	"Kine": {
+		"num": 200,
+		"image": "kine.gif"
+	},
+	"King Dedede": {
+		"num": 205,
+		"image": "kingdedede.gif"
+	},
+	"Kirby Adventure": {
+		"num": 210,
+		"image": "kirbyadventure.gif"
+	},
+	"Kirby Break": {
+		"num": 215,
+		"image": "kirbybreak.gif"
+	},
+	"Kirby Dreamland 3": {
+		"num": 220,
+		"image": "kirbydreamland3.gif"
+	},
+	"Kirby Plush": {
+		"num": 225,
+		"image": "kirbyplush.gif"
+	},
+	"Kirby Samurai": {
+		"num": 230,
+		"image": "kirbysamurai.gif"
+	},
+	"Kirby Ship": {
+		"num": 235,
+		"image": "kirbyship.gif"
+	},
+	"Kirby Snooze": {
+		"num": 240,
+		"image": "kirbysnooze.gif"
+	},
+	"Kirby Strut": {
+		"num": 245,
+		"image": "kirbystrut.gif"
+	},
+	"Kirby Warpstar": {
+		"num": 250,
+		"image": "kirbywarpstar.gif"
+	},
+	"Knuckle Joe": {
+		"num": 255,
+		"image": "knucklejoe.gif"
+	},
+	"Kracko": {
+		"num": 260,
+		"image": "kracko.gif"
+	},
+	"Kruff": {
+		"num": 265,
+		"image": "kruff.gif"
+	},
+	"Lunark Knight": {
+		"num": 270,
+		"image": "lunarknight.gif"
+	},
+	"Masher": {
+		"num": 275,
+		"image": "masher.gif"
+	},
+	"Master Hand": {
+		"num": 280,
+		"image": "masterhand.gif"
+	},
+	"Meta Knight": {
+		"num": 285,
+		"image": "metaknight.gif"
+	},
+	"Mr. Bright": {
+		"num": 290,
+		"image": "mrbright.gif"
+	},
+	"Mr. Shine": {
+		"num": 295,
+		"image": "mrshine.gif"
+	},
+	"Mumbies": {
+		"num": 300,
+		"image": "mumbies.gif"
+	},
+	"Noddy": {
+		"num": 310,
+		"image": "noddy.gif"
+	},
+	"Paintroller": {
+		"num": 320,
+		"image": "paintroller.gif"
+	},
+	"Panic": {
+		"num": 330,
+		"image": "panic.gif"
+	},
+	"Parasolwdee": {
+		"num": 340,
+		"image": "parasolwdee.gif"
+	},
+	"Phan Phan": {
+		"num": 350,
+		"image": "phanphan.gif"
+	},
+	"Plasma Whisp": {
+		"num": 360,
+		"image": "plasmawhisp.gif"
+	},
+	"Poppy Bros": {
+		"num": 370,
+		"image": "poppybros.gif"
+	},
+	"Poppy Brossr": {
+		"num": 380,
+		"image": "poppybrossr.gif"
+	},
+	"Rick": {
+		"num": 390,
+		"image": "rick.gif"
+	},
+	"Rocky": {
+		"num": 400,
+		"image": "rocky.gif"
+	},
+	"Scarfy": {
+		"num": 410,
+		"image": "scarfy.gif"
+	},
+	"Scarfy Provoked": {
+		"num": 420,
+		"image": "scarfyprovoked.gif"
+	},
+	"Simirror": {
+		"num": 430,
+		"image": "simirror.gif"
+	},
+	"Sir Kibble": {
+		"num": 440,
+		"image": "sirkibble.gif"
+	},
+	"Sparky": {
+		"num": 450,
+		"image": "sparky.gif"
+	},
+	"Squishy": {
+		"num": 460,
+		"image": "squishy.gif"
+	},
+	"Star Orb": {
+		"num": 470,
+		"image": "starorb.gif"
+	},
+	"Stave": {
+		"num": 480,
+		"image": "stave.gif"
+	},
+	"Tac": {
+		"num": 490,
+		"image": "tac.gif"
+	},
+	"Togezo": {
+		"num": 500,
+		"image": "togezo.gif"
+	},
+	"Tooky": {
+		"num": 510,
+		"image": "tooky.gif"
+	},
+	"Toss Tortoise": {
+		"num": 520,
+		"image": "tosstortoise.gif"
+	},
+	"Tweet": {
+		"num": 530,
+		"image": "tweet.gif"
+	},
+	"Twister": {
+		"num": 540,
+		"image": "twister.gif"
+	},
+	"UFO": {
+		"num": 550,
+		"image": "ufo.gif"
+	},
+	"Waddledee": {
+		"num": 560,
+		"image": "waddledee.gif"
+	},
+	"Waddledoo": {
+		"num": 570,
+		"image": "waddledoo.gif"
+	},
+	"Walkie": {
+		"num": 580,
+		"image": "walkie.gif"
+	},
+	"Wheelie Big": {
+		"num": 590,
+		"image": "wheeliebig.gif"
+	},
+	"Wheelie Rider": {
+		"num": 600,
+		"image": "wheelierider.gif"
+	},
+	"Whispy Woods": {
+		"num": 700,
+		"image": "whispywoods.gif"
+	}
+}
