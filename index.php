@@ -76,7 +76,7 @@ if (!$fakeerror)
 			{
 				$plugin = $pluginpages[$page];
 				$self = $plugins[$plugin];
-				
+
 				chdir('plugins/'.$self['dir']);
 				$page = "pages/".$page.".php";
 				if(!file_exists($page))
@@ -84,7 +84,7 @@ if (!$fakeerror)
 				include($page);
 				unset($self);
 			}
-			else 
+			else
 			{
 				$page = 'pages/'.$page.'.php';
 				if(!file_exists($page))
@@ -106,7 +106,7 @@ if (!$fakeerror)
 	{
 		// Nothing. Just ignore this exception.
 	}
-	
+
 	chdir(BOARD_CWD);
 }
 
@@ -174,11 +174,11 @@ $code_highlight = "themes/$theme/highlight.css";
 if(!file_exists($code_highlight))
 	$code_highlight = "css/highlight-theme.css";
 
-$layout_credits = 
+$layout_credits =
 '<img src="'.resourceLink('img/poweredbyblarg.png').'" style="float: left; margin-right: 3px;">
 Blargboard &middot; by StapleButter (with <a href="https://github.com/phase/Blargboard">some modifications</a> by Phase)<br>
 Based off ABXD by Dirbaio, Kawa &amp; co.<br>';
-	
+
 
 $layout_contents = "<div id=\"page_contents\">$layout_contents</div>";
 
@@ -196,12 +196,12 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 <html lang="en">
 <head>
 	<title><?php print $layout_title; ?></title>
-	
+
 	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=10">
 	<meta name="description" content="<?php print $metaStuff['description']; ?>">
 	<meta name="keywords" content="<?php print $metaStuff['tags']; ?>">
-	
+
 	<link rel="shortcut icon" type="image/x-icon" href="<?php print $favicon;?>">
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink("css/common.css");?>">
 	<link rel="stylesheet" type="text/css" id="theme_css" href="<?php print resourceLink($themefile); ?>">
@@ -220,22 +220,22 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 	<script type="text/javascript">boardroot = <?php print json_encode($boardroot); ?>;</script>
 
 	<?php $bucket = "pageHeader"; include("./lib/pluginloader.php"); ?>
-	
+
 	<?php if ($mobileLayout) { ?>
 	<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width">
 	<script type="text/javascript" src="<?php echo resourceLink('js/mobile.js'); ?>"></script>
 	<?php if ($oldAndroid) { ?>
-	<style type="text/css"> 
-	#mobile-sidebar { height: auto!important; max-height: none!important; } 
-	#realbody { max-height: none!important; max-width: none!important; overflow: scroll!important; } 
+	<style type="text/css">
+	#mobile-sidebar { height: auto!important; max-height: none!important; }
+	#realbody { max-height: none!important; max-width: none!important; overflow: scroll!important; }
 	</style>
 	<?php } ?>
-	
+
 	<?php } ?>
 </head>
 <body style="width:100%; font-size: <?php echo $loguser['fontsize']; ?>%;">
 <form action="<?php echo actionLink('login'); ?>" method="post" id="logout" style="display:none;"><input type="hidden" name="action" value="logout"></form>
-<?php 
+<?php
 	if (Settings::get('maintenance'))
 		echo '<div style="font-size:30px; font-weight:bold; color:red; background:black; padding:5px; border:2px solid red; position:absolute; top:30px; left:30px;">MAINTENANCE MODE</div>';
 
@@ -258,7 +258,7 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 		'layout_credits' => $layout_credits,
 		'mobileswitch' => $mobileswitch,
 		'perfdata' => $perfdata,
-		'mainPage' => $mainPage)); 
+		'mainPage' => $mainPage));
 ?>
 </body>
 </html>

@@ -10,6 +10,8 @@ unset($dbpass);
 
 $dblink->set_charset('utf8');
 
+// set MySQL mode to 4.0 because strict mode breaks everything
+mysqli_query($dblink, 'SET SESSION sql_mode = "MYSQL40"');
 
 function SqlEscape($text)
 {
@@ -43,7 +45,7 @@ function Query_AddUserInput($match)
 	$var = $args[$match+1];
 
 	if ($var === NULL) return 'NULL';
-			
+
 	if ($format == 'c')
 	{
 		if (empty($var)) return 'NULL';
@@ -102,7 +104,7 @@ function rawQuery($query)
 	if(!$res)
 	{
 		$theError = $dblink->error;
-		
+
 		if($logSqlErrors)
 		{
 			$thequery = sqlEscape($query);
@@ -128,7 +130,7 @@ function rawQuery($query)
 			<input type=\"hidden\" name=\"action\" value=\"Install\" />
 			<input type=\"hidden\" name=\"existingSettings\" value=\"true\" />
 			<input type=\"submit\" value=\"Click here to re-run the installation script\" /></form>");*/
-		}	
+		}
 		trigger_error("MySQL Error.", E_USER_ERROR);
 		die("MySQL Error.");
 	}

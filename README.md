@@ -14,7 +14,7 @@ This board follows the Acmlmboard concept. If you don't know Acmlmboard, you don
 
 # Requirements
 
-Blargboard requires PHP 5.3.
+Blargboard requires PHP 5.3/7.0.
 
 There is no exact requirement for MySQL, but make sure to have a recent version.
 
@@ -28,7 +28,40 @@ Everything else is provided in the package.
 
 PHP and MySQL knowledge isn't required to use Blargboard but is a plus.
 
-Get a webserver. Upload the Blargboard codebase to it. Create an empty MySQL database.
+## Installing MySQL
+
+Install a MySQL server through your package manager. You should create a root
+user and password. Remember these.
+
+```
+sudo apt install mysql-server
+```
+
+Create a database for Blargboard to use.
+
+```
+phase$ mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 7
+Server version: 5.7.12-0ubuntu1 (Ubuntu)
+
+Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE blargboard;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> exit
+Bye
+```
+
+##  Installing the board
 
 Browse to your board's install.php (http://my.board.for.example/install.php) and follow the instructions.
 
@@ -100,11 +133,11 @@ How to add groups: add to the usergroups table via PMA
  * display: 0 for normal group, 1 for group listed as staff, -1 for hidden group
  * rank: a user may not mess with users of higher ranks no matter his permissions
 
- 
+
 How to add/remove secondary groups to someone: add to/remove from the secondarygroups table via PMA (or use ?page=secgroups for adding)
  * userid: the user's ID
  * groupid: the group's ID. Do not use the ID of a primary group!
- 
+
 WARNING: when banning someone, make sure that the secondary groups' permissions won't override the banned group's permissions. If that happens, you'll need to delete the secondarygroups assignments for the user.
 
 
