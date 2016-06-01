@@ -212,11 +212,10 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 	<script type="text/javascript" src="<?php print resourceLink("js/tricks.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/jquery.tablednd_0_5.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/jquery.scrollTo-1.4.2-min.js");?>"></script>
-	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
-	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.slide.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/jscolor/jscolor.js");?>"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<script type="text/javascript">boardroot = <?php print json_encode($boardroot); ?>;</script>
 
 	<?php $bucket = "pageHeader"; include("./lib/pluginloader.php"); ?>
