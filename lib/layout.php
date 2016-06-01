@@ -319,8 +319,6 @@ function makeForumListing($parent, $board='', $template="forumlist")
 		if ($newstuff > 0)
 			$fdata['new'] = "<div class=\"statusIcon new\">$newstuff</div>";
 
-		$fdata['description'] = $forum['description'];
-
 		if (isset($mods[$forum['id']]))
 		{
 			foreach($mods[$forum['id']] as $user)
@@ -334,6 +332,8 @@ function makeForumListing($parent, $board='', $template="forumlist")
 
 		if($localMods)
 			$fdata['localmods'] = substr($localMods,0,-2);
+
+		$fdata['description'] = $forum['description'] || $fdata['localmods'] ? $forum['description'] : "&nbsp;";
 
 		if (isset($subfora[$forum['id']]))
 		{
