@@ -31,8 +31,8 @@
 			"name" => "Text in menu's first link",
 			'category' => 'Board identity'
 		),
-		
-		
+
+
 		"dateformat" => array (
 			"type" => "text",
 			"default" => "m-d-y, h:i a",
@@ -96,8 +96,8 @@ Well, what more could you [url=http://en.wikipedia.org]want to know[/url]? Perha
 			"name" => "Post preview text",
 			'category' => 'Presentation'
 		),
-		
-		
+
+
 		"postLayoutType" => array (
 			"type" => "options",
 			"options" => array('0' => 'Signature', '1' => 'Post header + signature', '2' => 'Post header + signature + sidebars'),
@@ -168,8 +168,8 @@ Well, what more could you [url=http://en.wikipedia.org]want to know[/url]? Perha
 			'category' => 'Functionality',
 			'rootonly' => 1,
 		),
-		
-		
+
+
 		'PoRATitle' => array(
 			'type' => 'text',
 			'default' => 'Blargbox',
@@ -194,8 +194,8 @@ Well, what more could you [url=http://en.wikipedia.org]want to know[/url]? Perha
 			"name" => "RSS feed description",
 			'category' => 'Information',
 		),
-		
-		
+
+
 		'newsForum' => array(
 			'type' => 'forum',
 			'default' => '0',
@@ -220,8 +220,8 @@ Well, what more could you [url=http://en.wikipedia.org]want to know[/url]? Perha
 			"name" => "Deleted threads forum",
 			'category' => 'Forum settings',
 		),
-		
-		
+
+
 		'defaultGroup' => array (
 			'type' => 'group',
 			'default' => 0,
@@ -243,8 +243,8 @@ Well, what more could you [url=http://en.wikipedia.org]want to know[/url]? Perha
 			'category' => 'Group settings',
 			'rootonly' => 1,
 		),
-		
-		
+
+
 		'homepageText' => array(
 			'type' => 'texthtml',
 			'default' => 'Welcome to Blargboard.<br><br>Fill this with relevant info.',
@@ -257,5 +257,12 @@ Well, what more could you [url=http://en.wikipedia.org]want to know[/url]? Perha
 			'name' => 'FAQ contents',
 			'category' => 'FAQ contents',
 		),
+
+		'discordKey' => array(
+			'type' => 'text',
+			'default' => 'SECRET_KEY',
+			'name' => 'Discord Bot Key',
+			'category' => 'Discord',
+		)
 	);
 ?>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "team-reflex/discord-php": "^3.2",
+        "textalk/websocket": "^1.2"
+    }
+}
